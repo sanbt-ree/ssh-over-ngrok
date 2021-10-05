@@ -1,0 +1,16 @@
+{
+  "name": "ssh-ngrok-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start index.js --name ssh-ngrok-service"
+  },
+  "author": "Gith",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "ngrok": "^4.0.1"
+  }
+}
