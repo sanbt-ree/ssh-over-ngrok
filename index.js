@@ -16,6 +16,7 @@ const ngrok = require("ngrok");
     addr: 22, // ssh port
     authtoken: process.env.NGROK_AUTH_TOKEN,
     region: process.env.NGROK_REGION,
+    metadata: '{"site": "' + process.env.NGROK_SITE + '"}'
   });
   console.log(Date(), url);
 })();
